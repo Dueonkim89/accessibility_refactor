@@ -12,15 +12,38 @@ body {
   background: #2d2b30;
 }
 
+.information p:nth-child(3) {
+    margin-bottom: 2rem;
+}
+
+.information p:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
 /* Link Styles */
 
 a {
   text-decoration: none;
   color: #c9c239;
+  font-size: .85rem;
 }
 
 a:hover {
   color: #f06d2b;
+}
+
+.buy {
+	font-weight: bold;
+	padding: 10px 8px;
+	background: #6ce35f;
+	border-radius: 5px;
+	color: #161517;
+	border: 2px solid #24b324;
+}
+
+.buy:focus {
+	border: 3px solid #f5bf29;
+	outline: none; 
 }
 
 /* Section Styles */
@@ -72,15 +95,15 @@ header {
 }
 
 header h1 {
-	padding-top: 1.5rem;
+	margin-top: 5rem;
 	color: #2d2b30;
-	font-size: 4.25rem;
+	font-size: 1.75rem;
 	margin-bottom: 0rem;
 }
 
 header h2 {
 	color: #781125;
-	font-size: 2rem;
+	font-size: 1.25rem;
 }
 
 .tag {
@@ -129,11 +152,21 @@ header .name{
   position: absolute;*/
 }
 
+.information p {
+	font-size: .85rem;
+}
+
+#band_info {
+	line-height: 1.65rem;
+}
+
 .heading{
-  font-size: 2em;
+  font-size: .95em;
   text-transform: uppercase;
   color: #f57a0e;
-  margin-top: 10px;
+  margin-top: 2rem;
+  text-decoration: underline;
+  margin-bottom: 2rem;
 }
 
 /* Footer styles */
@@ -169,21 +202,6 @@ a.social {
   transition: all .5s;
 }
 
-/*a.twitter {
-  background-image: url(../img/twitter-32.png);
-} */
-
-/*
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-*/
-
-/*
-a.spotify {
-  background-image: url(../img/spotify-32.png);
-}
-*/
 
 
 a.social:hover {
@@ -194,7 +212,58 @@ a.social:hover {
 }
 
 /* Styles for larger screens */
+@media screen and (min-width: 768px) {
+	header {
+    min-height: 470px;
+	}
+  
+	 header h1 {
+		font-size: 2.5rem;
+	}
+
+	header h2 {
+		font-size: 1.5rem;
+	}
+	
+	.heading{
+	  font-size: 1.5em;
+	}
+	
+	a {
+		font-size: 1.15rem;
+	}
+
+	.information p:nth-child(3) {
+    margin-bottom: 2.75rem;
+	}
+
+	.information p:nth-child(2) {
+    margin-bottom: 2rem;
+	}
+
+	.information p {
+		font-size: 1.15rem;
+	}	
+	
+	.buy {
+		padding: 12px 10px;
+	}
+	
+	#band_info {
+		line-height: 2.25rem;
+	}	
+	
+	footer .copyright {
+	  font-size: 1.15em;
+	}
+	
+}
+
 @media screen and (min-width: 840px) {
+	
+	.heading{
+	  font-size: 2em;
+	}
 
   .flex {
     display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -203,9 +272,6 @@ a.social:hover {
     -ms-flex-pack: distribute;
   }
 
-  header {
-    min-height: 470px;
-  }
 
   .nav {
     max-width: 1200px;
@@ -230,11 +296,12 @@ a.social:hover {
 
   .photo{
     width: 30%;
-    margin: 20px 30px;
+    margin: 30px 30px;
   }
 
   .information{
     text-align: left;
+	margin-left: 4rem;
   }
 
   footer {
@@ -242,4 +309,23 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
+  
+  .information p {
+		font-size: 1.3rem;
+	}
+  
+  header h1 {
+	margin-top: 9rem;
+	font-size: 3.75rem;
+  } 
+  
 }
+
+@media screen and (min-width: 1024px) {
+	
+	.information {
+		margin-left: 10rem;
+	}
+	
+	
+}	

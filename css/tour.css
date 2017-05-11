@@ -7,6 +7,8 @@ pre {
 .heading{
   display: inline-block;
   margin: 0;
+  font-size: .85em;
+ 
 }
 
 .pick{
@@ -15,21 +17,72 @@ pre {
   padding: 10px;
 }
 
-caption {
-	padding-bottom: 2.5rem;
-}
-
-table {
-    border-collapse: collapse;
+.card{
 	margin: 0 auto;
 }
 
-table, th, td {
-    border: 1.75px solid #fadb28;
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	padding: 8px;
 }
 
+caption {
+		padding-bottom: .75rem;
+		font-size: .95rem;
+	}
+	
 th {
-	text-align: center;
 	color: #e35f6c;
+	font-size: .95rem;
+	padding: 8px;
+}	
+
+td {
+	font-size: .95rem;
+	padding: 8px;
+}
+
+header {
+	margin-bottom: 1.75rem;
+}
+
+@media screen and (min-width: 768px) {
+	
+	caption {
+		font-size: 1.65rem;
+		margin-bottom: 1.25rem;
+	}
+	
+	td {
+		font-size: 1.1rem;
+	}
+	
+	th {
+		font-size: 1.25rem;
+	}
+	
+	table, th, td {
+		border: 1.75px solid #fadb28;
+	}
+	
+}
+
+
+
+@media screen and (min-width: 840px) {
+	caption {
+		padding-bottom: 2.5rem;
+	}
+
+	td {
+		padding: 1.25rem;
+	}
+	
+
+	th {
+		text-align: center;
+		color: #e35f6c;
+	}
 }
 

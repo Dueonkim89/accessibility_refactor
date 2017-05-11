@@ -9,23 +9,23 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <nav class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="#">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="survey.html">Survey</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <header>
+    <header role="banner">
 		<h1>ACCESSIBLE FROG</h1>
 		<h2>we make awesome music</h2>
     </header>
 
-    <main>
+    <main role="main">
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/soul_of_the_frog.jpg" alt="Newy released album titled Soul Of The Frog">
+          <img class="photo" src= "img/soul_of_the_frog.jpg" alt="Newy released album, Soul Of The Frog">
           <div class="information">
             <h1 class="heading">New album out now</h1>
             <p>Soul of the Frog</p>
@@ -40,14 +40,14 @@
           <img class="photo" src= "img/lead_singer.jpg" alt="Lead singer John singing at a concert">
           <div class="information">
             <h1 class="heading">About the band</h1>
-            <p>Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
+            <p id="band_info">Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
           </div>
         </div>
       </div>
     </main>
 
-    <footer>
-      <ul>
+    <footer role="contentinfo">
+       <ul>
         <li>
 			<a href="#" class="social twitter">
 			<img src= "img/twitter-32.png" alt="Link to Twitter">
@@ -63,7 +63,7 @@
 			<img src= "img/spotify-32.png" alt="Link to Spotify">
 			</a>
 		</li>
-      </ul>
+		</ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>
 
